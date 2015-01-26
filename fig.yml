@@ -4,5 +4,5 @@ ttycast:
         - "13377:13377"
     volumes:
         - ./:/work
-    command: sh -c "mkfifo -m 666 /work/ttycast && ttyplay -n /work/ttycast | ttycast -s 200x40"
+    command: sh -c "mkfifo -m 666 /work/ttycast && ttyplay -n /work/ttycast | ttycast -s 200x40; rm /work/ttycast"
 

@@ -12,5 +12,6 @@ RUN apt-get update \
 RUN npm install ttyrec ttycast
 ENV PATH /node_modules/.bin/:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 WORKDIR /work
-CMD mkfifo -m 666 /work/ttycast && ttyplay -n /work/ttycast | ttycast -s 200x40; rm /work/ttycast
+ENV TERMSIZE 200x40
+ENTRYPOINT mkfifo -m 666 /work/ttycast && ttyplay -n /work/ttycast | ttycast -s ${TERMSIZE}; rm /work/ttycast
 
