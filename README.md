@@ -1,7 +1,7 @@
 Docker Image for [dtinth/ttycast](https://github.com/dtinth/ttycast)
 ====
 
-Usage
+How to use
 ----
 
 ```console
