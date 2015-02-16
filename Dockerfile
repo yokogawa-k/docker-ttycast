@@ -1,5 +1,5 @@
 FROM ubuntu:14.04
-MAINTAINER Kazuya Yokogawa "yokogawa-k@klab.ocm"
+MAINTAINER Kazuya Yokogawa "yokogawa-k@klab.com"
 
 ENV DEBIAN_FRONTEND noninteractive
 RUN apt-get update \
