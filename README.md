@@ -14,12 +14,12 @@ $ reset && ttyrec ttycast
 
 Access host:13377 with browser.
 
-fig
+docker-compose
 ----
 
 ```console
-$ fig up -d
-$ fig logs
+$ docker-compose up -d
+$ docker-compose logs
 ```
 
 Size
